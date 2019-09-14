@@ -14,7 +14,7 @@ import static java.lang.String.format;
  * that there could be only one <em>CommandHandler</em> for Command.
  * If more than one <em>CommandHandler</em> is resolved for Command - exception is thrown.
  * CommandHandler is just a class, having one or more methods
- * annotated with {@link Handler}
+ * annotated with {@link CmdHandler}
  *
  * <p> It is possible to register more than one <em>ValueProvider</em>
  * of same type. In that case appropriate <em>ValueProvider</em> for CommandHandler's

@@ -39,7 +39,7 @@ final class CommandHandlerFactory {
 
     @SuppressWarnings("unchecked")
     private static Set<Method> extractCommandHandlingMethods(Object commandHandler) {
-        Set<Method> handlingMethods = getAllMethods(commandHandler.getClass(), withAnnotation(Handler.class));
+        Set<Method> handlingMethods = getAllMethods(commandHandler.getClass(), withAnnotation(CmdHandler.class));
         if (handlingMethods.stream()
                 .anyMatch(m -> m.getParameterCount() == 0)) {
 

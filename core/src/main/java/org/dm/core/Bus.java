@@ -3,7 +3,7 @@ package org.dm.core;
 import java.util.function.Function;
 
 /**
- * Bus routes Commands(POJO) to appropriate <em>CommandHandler</em>(class methods annotated with {@link Handler}).
+ * Bus routes Commands(POJO) to appropriate <em>CommandHandler</em>(class methods annotated with {@link CmdHandler}).
  * If CommandHandler has additional parameters, it will be populated
  * with value provided by <em>ValueProvider</em>(class methods annotated with {@link Provider})
  *
@@ -20,7 +20,7 @@ public class Bus {
     /**
      * Synchronous command execution.
      * @param command Command to be sent for execution
-     * @return R which is the result of CommandHandler method execution (See {@link Handler})
+     * @return R which is the result of CommandHandler method execution (See {@link CmdHandler})
      * @throws IllegalStateException containing original cause
      */
     public <R> R execute(Object command) {

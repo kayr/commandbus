@@ -18,7 +18,7 @@ import static java.lang.annotation.ElementType.METHOD;
  * should be called to resolve <em>CommandHandler</em> params.
  *
  * <p>It is possible for a class to have more than one method
- * annotated with {@link Handler}. But the combination of
+ * annotated with {@link CmdHandler}. But the combination of
  * method return type and method name should be unique.
  */
 @Documented

@@ -96,33 +96,33 @@ public class BusBuilderTest {
     }
 
     public static final class CommandHandler {
-        @Handler
+        @CmdHandler
         public Integer handle(Command c) {
             return 5;
         }
     }
 
     public static final class CommandHandlerWith2Handlers {
-        @Handler
+        @CmdHandler
         public Integer handle(Command c) {
             return 5;
         }
 
-        @Handler
+        @CmdHandler
         public Integer handle(Command2 c) {
             return 6;
         }
     }
 
     public static final class CommandHandlerWithOneParam {
-        @Handler
+        @CmdHandler
         public Integer handle(Command c, Integer i) {
             return 5 + i;
         }
     }
 
     public static final class CommandHandlerWithTwoParam {
-        @Handler
+        @CmdHandler
         public Integer handle(Command c, Integer j, Integer i) {
             return 5 + i + j;
         }
